@@ -165,8 +165,10 @@ const draw = (svg, params) => {
 const CollapsibleTree = (props) => {
   const [container, svg] = useSvg(init);
 
-  const [data] = useDataFetchMemo("/data/flare-2.json");
+  // const [data] = useDataFetchMemo("/data/flare-2.json");
+  const [data] = useDataFetchMemo("/data/lineage.json");
 
+  const { links, nodes } = data[0] ?? {};
   const params = React.useMemo(() => {
     if (data) {
       return compute(data);

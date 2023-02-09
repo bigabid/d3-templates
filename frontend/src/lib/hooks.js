@@ -91,6 +91,7 @@ const dataFetchReducer = (state, action) => {
 };
 
 export const useDataFetch = (fetch, arg, initialData = null) => {
+
   const [state, dispatch] = React.useReducer(dataFetchReducer, {
     isLoading: false,
     isError: false,
@@ -104,6 +105,7 @@ export const useDataFetch = (fetch, arg, initialData = null) => {
       dispatch({ type: "FETCH_INIT" });
 
       try {
+
         const result = await fetch(arg);
 
         if (!didCancel) {

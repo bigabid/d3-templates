@@ -8,6 +8,7 @@ import { format as d3format } from "d3-format";
 import {} from "d3-interpolate";
 import { schemeCategory10 as d3schemeCategory10 } from "d3-scale-chromatic";
 import { csvParse as d3csvParse, autoType as d3autoType } from "d3-dsv";
+
 import {
   sankey as d3sankey,
   sankeyLeft as d3sankeyLeft,
@@ -167,9 +168,10 @@ const SankeyDiagram = (props) => {
 
   const [container, svg] = useSvg(init);
 
-  const [links] = useDataFetchMemo("/data/energy.csv", (text) =>
-    d3csvParse(text, d3autoType)
-  );
+ 
+  const [ data ] = useDataFetchMemo("/data/lineage.json");
+
+  const { links, nodes } = data ?? {};
 
   const params = React.useMemo(() => callIfReady(computeParams, links), [
     links,
