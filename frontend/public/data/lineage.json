@@ -1,0 +1,190 @@
+{
+    "nodes": [
+        {
+            "name": "clicks_prod_level_1",
+            "id": 1049
+        },
+        {
+            "name": "actions_prod_level_1",
+            "id": 1321
+        },
+        {
+            "name": "attributions_prod_offline_lists",
+            "id": 1434
+        },
+        {
+            "name": "clicks_prod_error_level_1",
+            "id": 1496
+        },
+        {
+            "name": "attributions_prod_level_1",
+            "id": 1720
+        },
+        {
+            "name": "actions_prod_offline_lists",
+            "id": 2135
+        },
+        {
+            "name": "impressions_prod_level_1",
+            "id": 2518
+        },
+        {
+            "name": "impressions_prod_level_2",
+            "id": 2674
+        },
+        {
+            "name": "clicks_prod_level_2",
+            "id": 2745
+        },
+        {
+            "name": "lose_notifications_dedup",
+            "id": 2821
+        },
+        {
+            "name": "feedbacks_enriched_v2",
+            "id": 2839
+        },
+        {
+            "name": "win_notifications_dedup",
+            "id": 2990
+        },
+        {
+            "name": "actions_prod_level_2",
+            "id": 3125
+        },
+        {
+            "name": "adx_feedbacks_enriched",
+            "id": 3287
+        },
+        {
+            "name": "attributions_prod_level_2",
+            "id": 3302
+        },
+        {
+            "name": "pamp_distinct_publishers_daily",
+            "id": 11676
+        },
+        {
+            "name": "impressions_prod_level_2",
+            "id": 12338
+        },
+        {
+            "name": "clicks_prod_level_2",
+            "id": 13724
+        },
+        {
+            "name": "feedbacks_enriched_v2",
+            "id": 15220
+        },
+        {
+            "name": "actions_prod_level_2",
+            "id": 21953
+        },
+        {
+            "name": "attributions_prod_level_2",
+            "id": 25734
+        }
+    ],
+    "links": [
+        {
+            "source": "2839feedbacks_enriched_v2",
+            "target": "11676pamp_distinct_publishers_daily",
+            "value": 1
+        },
+        {
+            "source": "15220feedbacks_enriched_v2",
+            "target": "2839feedbacks_enriched_v2",
+            "value": 1
+        },
+        {
+            "source": "2821lose_notifications_dedup",
+            "target": "15220feedbacks_enriched_v2",
+            "value": 1
+        },
+        {
+            "source": "2990win_notifications_dedup",
+            "target": "15220feedbacks_enriched_v2",
+            "value": 1
+        },
+        {
+            "source": "3287adx_feedbacks_enriched",
+            "target": "15220feedbacks_enriched_v2",
+            "value": 1
+        },
+        {
+            "source": "2674impressions_prod_level_2",
+            "target": "11676pamp_distinct_publishers_daily",
+            "value": 1
+        },
+        {
+            "source": "12338impressions_prod_level_2",
+            "target": "2674impressions_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "2518impressions_prod_level_1",
+            "target": "12338impressions_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "2745clicks_prod_level_2",
+            "target": "11676pamp_distinct_publishers_daily",
+            "value": 1
+        },
+        {
+            "source": "13724clicks_prod_level_2",
+            "target": "2745clicks_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "1496clicks_prod_error_level_1",
+            "target": "13724clicks_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "1049clicks_prod_level_1",
+            "target": "13724clicks_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "3302attributions_prod_level_2",
+            "target": "11676pamp_distinct_publishers_daily",
+            "value": 1
+        },
+        {
+            "source": "25734attributions_prod_level_2",
+            "target": "3302attributions_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "1434attributions_prod_offline_lists",
+            "target": "25734attributions_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "1720attributions_prod_level_1",
+            "target": "25734attributions_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "3125actions_prod_level_2",
+            "target": "11676pamp_distinct_publishers_daily",
+            "value": 1
+        },
+        {
+            "source": "21953actions_prod_level_2",
+            "target": "3125actions_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "2135actions_prod_offline_lists",
+            "target": "21953actions_prod_level_2",
+            "value": 1
+        },
+        {
+            "source": "1321actions_prod_level_1",
+            "target": "21953actions_prod_level_2",
+            "value": 1
+        }
+    ]
+}

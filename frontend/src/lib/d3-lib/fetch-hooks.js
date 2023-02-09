@@ -40,6 +40,7 @@ export const useDataFetchByUrlAndParse = (
   const state = useDataFetch(fetchAndParse, urlAndParse, initialData);
 
   const doFetch = (url, parse) => {
+
     setUrlAndParse((state) => ({
       url: url || state.url,
       parse: parse || state.parse,
@@ -54,6 +55,7 @@ export const useDataFetchMemoByUrlAndParse = (
   initialParse,
   initialData = null
 ) => {
+
   const [state, doFetch] = useDataFetchByUrlAndParse(
     initialUrl,
     initialParse,

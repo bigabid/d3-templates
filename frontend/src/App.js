@@ -160,8 +160,8 @@ const useStyles = makeStyles({
 
 const d3Examples = [
   {
-    name: "1. Bar Chart",
-    comp: (props) => <BarChart {...props} />,
+    name: "1. Sankey Diagram",
+    comp: (props) => <SankeyDiagram {...props} />,
   },
   {
     name: "2. Line Chart",
@@ -372,8 +372,8 @@ const d3Examples = [
     comp: (props) => <ArcDiagram {...props} />,
   },
   {
-    name: "54. Sankey Diagram",
-    comp: (props) => <SankeyDiagram {...props} />,
+    name: "54. Bar Chart",
+    comp: (props) => <BarChart {...props} />,
   },
   {
     name: "55. Hierarchical Edge Bundling",
@@ -545,7 +545,7 @@ const App = (props) => {
   const classes = useStyles();
 
   const [open, setOpen] = React.useState(true);
-  const [compIndex, setCompIndex] = React.useState(51);
+  const [compIndex, setCompIndex] = React.useState(0);
 
   const handleDrawerOpen = () => setOpen(true);
   const handleDrawerClose = () => setOpen(false);
